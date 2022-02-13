@@ -10,7 +10,6 @@ html{
 body{
     font-family: 'Roboto' !important;
     height: 300vh;
-    background-color: var(--bg);
 }
 a{
     text-decoration: none;
@@ -27,6 +26,10 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+button{
+    border: none;
+    background-color: white;
 }
 
 
@@ -50,6 +53,7 @@ ul{
     background-color: transparent;
     top: -4.1rem;
     transition: all .3s ease-in-out;
+    z-index: 9999999999;
 }
 .Navbar nav{
     max-width: 1400px;
@@ -128,6 +132,66 @@ ul{
 .Navbar .search input:focus::placeholder{
     color: #333;
 }
+
+/* The header section */
+.header{
+    padding: 13rem 0rem 6rem 0rem;
+    background-color: var(--bg);
+    width: 100%;
+}
+.header .carousel-inner .container .row p{
+    color: var(--black-brown-light);
+    margin: 1rem 0rem;
+}
+.header .carousel-inner .container .row .prise{
+    color:var(--black-brown-text);
+}
+.header .carousel-inner .container .row .prise span{
+    color:var(--black-brown-light);
+}
+.header .carousel-inner .container .row p:first-child{
+    font-size: 1.9rem;
+}
+.header .carousel-inner .container .row p:last-child{
+    color: var(--black-brown) !important;
+    margin: 1rem 0rem 0rem 0rem;
+}
+.header .carousel-inner .container .row h1{
+    color: var(--black-brown);
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 1rem 0rem 3rem 0rem;
+}
+.header .carousel-inner .container .row button{
+    width: 11.4rem;
+    height: 4rem;
+    margin-left: 0rem;
+    background-color: var(--orange) !important;
+    transition: all .3s ease-in-out !important;
+    color: white;
+}
+.header .carousel-inner .container .row button svg{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid var(--bg) !important;
+}
+.header .carousel-inner .container .row button:hover{
+    border: 1px solid var(--orange);
+    background-color: var(--bg) !important;
+    color: var(--orange) !important;
+}
+.header .carousel-inner .container .row .white__button{
+    background-color:var(--bg) !important;
+    color: var(--orange) !important;
+    margin-bottom: 2rem;
+    border: 2px solid var(--bg);
+}
+.header .carousel-inner .container .row .white__button:hover{
+    border: 1px solid var(--orange) !important;
+    background-color:var(--bg);
+}
+
 
 
 /* Toggle: javascript class list styles */
