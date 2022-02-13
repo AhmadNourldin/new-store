@@ -191,6 +191,35 @@ button{
     border: 1px solid var(--orange) !important;
     background-color:var(--bg);
 }
+.header .carousel-indicators{
+    display: flex;
+    gap: 0.7rem;
+    transform: translate(0rem, 4rem);
+}
+.header .carousel-indicators button{
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 1px solid var(--orange);
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+.header .carousel-indicators .active{
+    width: 1rem !important;
+    height: 1rem !important;
+    top: -2px;
+}
+.header .carousel-indicators .active::after{
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--orange);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
