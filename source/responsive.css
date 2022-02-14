@@ -1,0 +1,22 @@
+/* discover section */
+@media (max-width:1000px) {
+    .discover{
+        grid-template-columns: auto !important;
+    }
+    .discover .A, .discover .B, .discover .C{
+        max-width: 28rem;
+        padding: 3rem !important;
+    }
+    .discover .B{
+        grid-template-columns: auto !important;
+        align-items: center;
+    }
+    .discover .B img{
+        margin: 0rem auto;
+    }
+    @media (max-width:449px) {
+        .discover .A, .discover .B, .discover .C{
+            padding: 1rem !important;
+        }
+    }
+}

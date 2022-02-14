@@ -9,7 +9,6 @@ html{
 }
 body{
     font-family: 'Roboto' !important;
-    height: 300vh;
 }
 a{
     text-decoration: none;
@@ -56,7 +55,7 @@ button{
     z-index: 9999999999;
 }
 .Navbar nav{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0rem auto;
     height: 100%;
     display: grid;
@@ -139,6 +138,9 @@ button{
     background-color: var(--bg);
     width: 100%;
 }
+.header .carousel-inner .container .row .col-md-7{
+    margin-bottom: 6rem;
+}
 .header .carousel-inner .container .row p{
     color: var(--black-brown-light);
     margin: 1rem 0rem;
@@ -184,7 +186,6 @@ button{
 .header .carousel-inner .container .row .white__button{
     background-color:var(--bg) !important;
     color: var(--orange) !important;
-    margin-bottom: 2rem;
     border: 2px solid var(--bg);
 }
 .header .carousel-inner .container .row .white__button:hover{
@@ -221,7 +222,65 @@ button{
     transform: translate(-50%, -50%);
 }
 
-
+/* discover section */
+.con-discover{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.discover{
+    max-width: 1300px;
+    margin: 5rem 2rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: 24% 52% 24%;
+}
+.discover .A,.discover .B, .discover .C{
+    background-color: var(--bg) !important;
+    text-align: center;
+    padding: 2rem 1rem 0rem 1rem;
+}
+.discover .A:hover h3,.discover .B:hover h3, .discover .C:hover h3{
+    color: var(--orange);
+}
+.discover .A h3,.discover .B h3, .discover .C h3{
+    font-size: 1.1rem;
+    margin: 1.3rem 0rem;
+    color: var(--black-brown-text);
+    transition: all .3s ease-in-out;
+}
+.discover .A p,.discover .B p, .discover .C p{
+    font-size: 0.89rem;
+    margin: 1.3rem 0rem 0rem 0rem;
+    color: var(--black-brown-light);
+}
+.discover .B{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.discover .B img{
+    height: 80%;
+}
+.discover .B button{
+    margin: 1rem 0rem;
+    width: 10rem;
+    height: 3rem;
+    color: var(--black-brown);
+    border: 1px solid var(--black-brown);
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.discover .B:hover button{
+    background-color: var(--black-brown);
+    color: var(--bg);
+}
+.discover .C{
+    padding-top: 0rem;
+}
+.discover .C p{
+    margin-bottom: 2rem;
+}
 
 /* Toggle: javascript class list styles */
 .top{
