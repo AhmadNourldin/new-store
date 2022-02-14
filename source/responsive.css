@@ -20,3 +20,18 @@
         }
     }
 }
+@media (max-width:1240px) {
+    .con-sale .sale{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width:800px) {
+    .con-sale .sale{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:585px) {
+    .con-sale .sale{
+        grid-template-columns: auto;
+    }
+}

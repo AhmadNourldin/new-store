@@ -42,6 +42,8 @@ button{
     --green: #47d93c;
     --bg-footer: #f8f9fd;
     --bg-search: #333;
+    --card: #33383c;
+    --bg-sale-card: rgba(106,119,129,.1);
 }
 
 /* Navbar Section */
@@ -281,6 +283,124 @@ button{
 .discover .C p{
     margin-bottom: 2rem;
 }
+
+/* Sale section */
+.con-sale{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.sale{
+    margin: 0 auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 2rem;
+    gap: 1rem;
+}
+.sale-item{
+    width: 17rem;
+}
+.sale-item .inner-img{
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.sale-item .inner-img img{
+    transition: all .2s ease-in-out;
+}
+.sale-item .inner-img::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: var(--bg-sale-card);
+    transition: all .2s ease-in-out;
+    opacity: 0.4;
+}
+.sale-item .inner-img::before{
+    content: "Sale";
+    position: absolute;
+    background-color: var(--green);
+    color: white;
+    top: 3%;
+    font-size: 0.8rem;
+    width: 3.6rem;
+    padding: 0.3rem 0rem;
+    text-align: center;
+    right: 0;
+}
+.sale-item .inner-img .bottom{
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card);
+    height: 2rem;
+    color: white;
+    padding: 0rem 1rem;
+    font-size: 0.6rem !important;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.sale-item .inner-img .bottom .right, .inner-img .bottom .left{
+    display: flex;
+    gap: 0.8rem;
+}
+.sale-item .inner-img .bottom .left a{
+    color: var(--bg);
+}
+.sale-item:hover .inner-img .bottom{
+    bottom: 0;
+    opacity: 1;
+    visibility:visible;
+}
+.sale-item:hover .inner-img::after{
+    width: 100%;
+    height: 100%;
+}
+.sale-item .inner-content{
+    text-align: center;
+}
+.sale-item:hover .inner-img img{
+    transform: scale(1.1);
+}
+.sale-item .inner-content h4{
+    margin: 2rem 0rem;
+}
+.sale-item:hover .inner-content h4{
+    color: var(--orange);
+}
+.sale-item .inner-content p{
+    margin: 2rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Toggle: javascript class list styles */
 .top{
