@@ -20,6 +20,8 @@
         }
     }
 }
+
+/* sale cards*/
 @media (max-width:1240px) {
     .con-sale .sale{
         grid-template-columns: auto auto auto;
@@ -33,5 +35,19 @@
 @media (max-width:585px) {
     .con-sale .sale{
         grid-template-columns: auto;
+    }
+}
+/* Collection */
+@media (max-width:900px) {
+    .collection{
+        background-position: center !important;
+    }
+    .collection::after{
+        width: 55% !important;
+    }
+}
+@media (max-width:600px) {
+    .collection{
+        padding: 10rem 1rem !important;
     }
 }

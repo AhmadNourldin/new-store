@@ -44,6 +44,7 @@ button{
     --bg-search: #333;
     --card: #33383c;
     --bg-sale-card: rgba(106,119,129,.1);
+    --collection: #33383c;
 }
 
 /* Navbar Section */
@@ -387,7 +388,48 @@ button{
 .sale-item .inner-content p{
     margin: 2rem 0rem;
 }
-
+.collection{
+    width: 100%;
+    background-image: url("/images/collection/table-banner.jpg") !important;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 4rem;
+    position: relative;
+    z-index: 0;
+    margin: 6rem 0rem;
+}
+.collection::after{
+    height: 100%;
+    content: "";
+    background-color: var(--collection);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+}
+.collection h2{
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: white;
+}
+.collection p{
+    margin: 2rem 0rem;
+    max-width: 35rem;
+    font-weight: 500;
+    color: white;
+    font-size: 1.1rem;
+}
+.collection button{
+    background-color: var(--orange);
+    width: 10rem;
+    padding: 1rem 0rem;
+}
+.collection button a{
+    color: white !important;
+}
 
 
 
