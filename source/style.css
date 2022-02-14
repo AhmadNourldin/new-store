@@ -432,7 +432,42 @@ button{
 }
 
 
-
+/* feature */
+.feature{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.feature h1{
+    text-align: center;
+}
+.feature .body{
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+}
+.feature .body .item{
+    text-align: center;
+}
+.feature .body .item .star{
+    margin: 1.4rem 0rem !important;
+    color: var(--black-brown-light);
+}
+.feature .body .item svg path{
+    fill: #333 !important;
+}
+.feature .body .item span svg path{
+    fill: var(--orange) !important;
+}
+.feature .body .item a{
+    margin: 0.4rem 0rem;
+    color: #333 !important;
+}
+.feature .body .item p{
+    margin: 1rem 0rem;
+}
 
 
 

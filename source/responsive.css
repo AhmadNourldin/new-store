@@ -51,3 +51,19 @@
         padding: 10rem 1rem !important;
     }
 }
+/* feature section */
+@media (max-width:1200px) {
+    .feature .body{
+        grid-template-columns: auto auto auto !important;
+    }
+}
+@media (max-width:880px) {
+    .feature .body{
+        grid-template-columns: auto auto !important;
+    }
+}
+@media (max-width:603px) {
+    .feature .body{
+        grid-template-columns: auto !important;
+    }
+}
