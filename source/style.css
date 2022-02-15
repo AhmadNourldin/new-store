@@ -390,7 +390,6 @@ button{
 }
 .collection{
     width: 100%;
-    background-image: url("/images/collection/table-banner.jpg") !important;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
