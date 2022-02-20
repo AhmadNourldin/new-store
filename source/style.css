@@ -533,9 +533,32 @@ button{
     gap: 0.7rem;
     color: var(--black-brown);
 }
-
-
-
+/* Go to top button */
+.go_to_top{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 5%;
+    right: 3%;
+    background-color: var(--orange);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 99999;
+    transition: all .2s ease-in-out;
+}
+.go_to_top svg{
+    animation: jump 2s infinite;
+}
+.go_to_top svg path{
+    fill: white;
+}
+@keyframes jump{
+    0%{transform: translate(0rem);}
+    50%{transform: translateY(-0.7rem);}
+    100%{transform: translateY(0rem);}
+}
 
 
 /* Toggle: javascript class list styles */

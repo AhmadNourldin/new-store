@@ -4,6 +4,11 @@ window.addEventListener('scroll', () => {
     }else{
         document.querySelector('.Navbar').classList.remove('small_navbar');
     }
+    if(window.scrollY > 500){
+        document.getElementById("go_to_top").style.bottom = "5%";
+    }else{
+        document.getElementById("go_to_top").style.bottom = "-10%";
+    }
 })
 
 // Navbar setting 

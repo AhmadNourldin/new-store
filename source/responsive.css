@@ -1,3 +1,12 @@
+/* Navbar section*/
+@media (max-width:870px) {
+    .Navbar nav{
+        grid-template-columns: auto auto !important;
+    }
+    .Navbar ul{
+        display: none !important;
+    }
+}
 /* discover section */
 @media (max-width:1000px) {
     .discover{
